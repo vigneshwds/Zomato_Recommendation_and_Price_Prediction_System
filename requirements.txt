@@ -1,5 +1,5 @@
 numpy
 pandas
-pickle5
+xgboost
 streamlit
 plotly
