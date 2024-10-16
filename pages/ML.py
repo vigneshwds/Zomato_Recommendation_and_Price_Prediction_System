@@ -81,7 +81,7 @@ class Zomato:
                       encoded_cuisine_value,votes,agg_rating,table_dict[table]]
             features=[price,rat_text_dict[rat_text],rat_col_dict[rat_color],np.sqrt(votes),np.sqrt(agg_rating),encoded_cuisine_value,
                       table_dict[table],encoded_city_value,country_dict[country]]
-            Model=pickle.load(open('C:/Capstone files/Final_Project/Model1.pkl','rb'))
+            Model=pickle.load(open('Model1.pkl','rb'))
             pred=Model.predict([features])[0]
             pred=np.square(pred)
             st.subheader(f'Average Cost for two People : Rs.{pred:.2f}/-')
